@@ -13,6 +13,7 @@
 		30B4D0F52969ECA00024A758 /* Vaulter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 30B4D0F32969ECA00024A758 /* Vaulter.xcdatamodeld */; };
 		30B4D0F72969ECA10024A758 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30B4D0F62969ECA10024A758 /* Assets.xcassets */; };
 		30B4D0FA2969ECA10024A758 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30B4D0F82969ECA10024A758 /* LaunchScreen.storyboard */; };
+		30B4D1032969EE950024A758 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B4D1022969EE950024A758 /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		30B4D0F62969ECA10024A758 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30B4D0F92969ECA10024A758 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30B4D0FB2969ECA10024A758 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30B4D1022969EE950024A758 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +58,10 @@
 		30B4D0E92969ECA00024A758 /* Vaulter */ = {
 			isa = PBXGroup;
 			children = (
+				30B4D1052969EEFA0024A758 /* UI */,
+				30B4D1092969EF9E0024A758 /* Resources */,
+				30B4D1082969EF930024A758 /* Extensions */,
 				30B4D1012969ECCC0024A758 /* App */,
-				30B4D0EE2969ECA00024A758 /* RootViewController.swift */,
-				30B4D0F62969ECA10024A758 /* Assets.xcassets */,
-				30B4D0FB2969ECA10024A758 /* Info.plist */,
 				30B4D0F32969ECA00024A758 /* Vaulter.xcdatamodeld */,
 			);
 			path = Vaulter;
@@ -68,11 +70,60 @@
 		30B4D1012969ECCC0024A758 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				30B4D0FB2969ECA10024A758 /* Info.plist */,
 				30B4D0EA2969ECA00024A758 /* AppDelegate.swift */,
 				30B4D0EC2969ECA00024A758 /* SceneDelegate.swift */,
 				30B4D0F82969ECA10024A758 /* LaunchScreen.storyboard */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		30B4D1042969EEF10024A758 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				30B4D1022969EE950024A758 /* TabBarController.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		30B4D1052969EEFA0024A758 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				30B4D1072969EF6C0024A758 /* Controllers */,
+				30B4D1062969EF360024A758 /* RootView */,
+				30B4D1042969EEF10024A758 /* Navigation */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		30B4D1062969EF360024A758 /* RootView */ = {
+			isa = PBXGroup;
+			children = (
+				30B4D0EE2969ECA00024A758 /* RootViewController.swift */,
+			);
+			path = RootView;
+			sourceTree = "<group>";
+		};
+		30B4D1072969EF6C0024A758 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		30B4D1082969EF930024A758 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		30B4D1092969EF9E0024A758 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				30B4D0F62969ECA10024A758 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +199,7 @@
 				30B4D0EF2969ECA00024A758 /* RootViewController.swift in Sources */,
 				30B4D0EB2969ECA00024A758 /* AppDelegate.swift in Sources */,
 				30B4D0ED2969ECA00024A758 /* SceneDelegate.swift in Sources */,
+				30B4D1032969EE950024A758 /* TabBarController.swift in Sources */,
 				30B4D0F52969ECA00024A758 /* Vaulter.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
