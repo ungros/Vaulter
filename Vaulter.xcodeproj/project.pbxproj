@@ -14,6 +14,8 @@
 		30B4D0F72969ECA10024A758 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30B4D0F62969ECA10024A758 /* Assets.xcassets */; };
 		30B4D0FA2969ECA10024A758 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30B4D0F82969ECA10024A758 /* LaunchScreen.storyboard */; };
 		30B4D1032969EE950024A758 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B4D1022969EE950024A758 /* TabBarController.swift */; };
+		30B4D10B296AFF9B0024A758 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B4D10A296AFF9B0024A758 /* Resources.swift */; };
+		30B4D10D296AFFCE0024A758 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B4D10C296AFFCE0024A758 /* UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		30B4D0F92969ECA10024A758 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30B4D0FB2969ECA10024A758 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30B4D1022969EE950024A758 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		30B4D10A296AFF9B0024A758 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		30B4D10C296AFFCE0024A758 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,7 @@
 		30B4D1082969EF930024A758 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				30B4D10C296AFFCE0024A758 /* UIColor.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -122,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				30B4D0F62969ECA10024A758 /* Assets.xcassets */,
+				30B4D10A296AFF9B0024A758 /* Resources.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -197,8 +203,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				30B4D0EF2969ECA00024A758 /* RootViewController.swift in Sources */,
+				30B4D10D296AFFCE0024A758 /* UIColor.swift in Sources */,
 				30B4D0EB2969ECA00024A758 /* AppDelegate.swift in Sources */,
 				30B4D0ED2969ECA00024A758 /* SceneDelegate.swift in Sources */,
+				30B4D10B296AFF9B0024A758 /* Resources.swift in Sources */,
 				30B4D1032969EE950024A758 /* TabBarController.swift in Sources */,
 				30B4D0F52969ECA00024A758 /* Vaulter.xcdatamodeld in Sources */,
 			);
