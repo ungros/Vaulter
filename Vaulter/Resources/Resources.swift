@@ -5,9 +5,32 @@
 //  Created by Roman on 08.01.2023.
 //
 
-import Foundation
+import UIKit
 
-struct R {
+enum R {
     
-    struct Colors
+    enum Colors {
+        
+    }
+    
+    enum Strings {
+        
+        enum TabBar {
+           static let foldersVC = "Folders"
+           static let homeVC = "Home"
+           static let settingsVC = "Settings"
+        }
+        
+        
+    }
+    
+    struct Images {
+        
+        enum TabBar {
+            static let foldersVC = UIImage(systemName: "folder.fill")
+            static let homeVC = UIImage(systemName: "homekit")
+            static let settingsVC = UIImage(systemName: "folder.fill.badge.gearshape")
+        }
+    }
+    
 }

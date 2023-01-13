@@ -22,9 +22,9 @@ extension TabBarController {
     private func arrangeSetVC() {
         
         viewControllers = [
-            setVC(viewController: <#T##UIViewController#>, title: <#T##String#>, image: <#T##UIImage?#>),
-            setVC(viewController: <#T##UIViewController#>, title: <#T##String#>, image: <#T##UIImage?#>),
-            setVC(viewController: <#T##UIViewController#>, title: <#T##String#>, image: <#T##UIImage?#>)
+            setVC(viewController: FoldersVC(), title: R.Strings.TabBar.foldersVC, image: R.Images.TabBar.foldersVC),
+            setVC(viewController: HomeVC(), title: R.Strings.TabBar.homeVC, image: R.Images.TabBar.homeVC),
+            setVC(viewController: SettingsVC(), title: R.Strings.TabBar.settingsVC, image: R.Images.TabBar.settingsVC)
         ]
     }
     
@@ -35,10 +35,13 @@ extension TabBarController {
     }
     
     private func setupTB() {
+        
         selectedIndex = 1
         
-        tabBar.layer.borderColor = .green.cgColor()
+        //tabBar.layer.borderColor =
+        //tabBar.layer.borderWidth = 1
+        tabBar.layer.masksToBounds = true
         
-        
+        tabBar.backgroundColor = .red
     }
 }
