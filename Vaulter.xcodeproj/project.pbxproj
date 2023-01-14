@@ -19,6 +19,7 @@
 		30B4D10F29717D7C0024A758 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B4D10E29717D7C0024A758 /* HomeVC.swift */; };
 		30B4D11129717DB20024A758 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B4D11029717DB20024A758 /* SettingsVC.swift */; };
 		30B4D113297180BA0024A758 /* FoldersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B4D112297180BA0024A758 /* FoldersVC.swift */; };
+		30B4D118297315F40024A758 /* NavBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B4D117297315F40024A758 /* NavBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		30B4D10E29717D7C0024A758 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		30B4D11029717DB20024A758 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		30B4D112297180BA0024A758 /* FoldersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoldersVC.swift; sourceTree = "<group>"; };
+		30B4D117297315F40024A758 /* NavBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				30B4D1022969EE950024A758 /* TabBarController.swift */,
+				30B4D117297315F40024A758 /* NavBarController.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 				30B4D0EF2969ECA00024A758 /* RootViewController.swift in Sources */,
 				30B4D10F29717D7C0024A758 /* HomeVC.swift in Sources */,
 				30B4D113297180BA0024A758 /* FoldersVC.swift in Sources */,
+				30B4D118297315F40024A758 /* NavBarController.swift in Sources */,
 				30B4D10D296AFFCE0024A758 /* UIColor.swift in Sources */,
 				30B4D0EB2969ECA00024A758 /* AppDelegate.swift in Sources */,
 				30B4D0ED2969ECA00024A758 /* SceneDelegate.swift in Sources */,

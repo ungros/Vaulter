@@ -42,6 +42,6 @@ extension TabBarController {
         //tabBar.layer.borderWidth = 1
         tabBar.layer.masksToBounds = true
         
-        tabBar.backgroundColor = .red
+        tabBar.backgroundColor = R.Colors.navigators
     }
 }
