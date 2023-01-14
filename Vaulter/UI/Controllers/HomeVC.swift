@@ -9,8 +9,14 @@ import UIKit
 
 class HomeVC: RootViewController {
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        view.backgroundColor = .blue
+    }
 }
 
 extension HomeVC {
     
 }
+

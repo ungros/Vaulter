@@ -43,5 +43,6 @@ extension TabBarController {
         tabBar.layer.masksToBounds = true
         
         tabBar.backgroundColor = R.Colors.navigators
+        tabBar.unselectedItemTintColor = .green
     }
 }

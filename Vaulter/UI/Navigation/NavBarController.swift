@@ -22,5 +22,9 @@ extension NavBarController {
         
         view.backgroundColor = R.Colors.navigators
         navigationBar.isTranslucent = false
+        
+        
+        
+        
     }
 }
