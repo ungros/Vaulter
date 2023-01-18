@@ -7,12 +7,13 @@
 
 import UIKit
 
-class HomeVC: RootViewController {
+final class HomeVC: RootCollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .blue
+        let listLayoutConfig = configureAppearence()
+        collectionView.collectionViewLayout = listLayoutConfig
     }
 }
 

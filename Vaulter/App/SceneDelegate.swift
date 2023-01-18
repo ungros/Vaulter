@@ -17,8 +17,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let tabBarController = TabBarController()
         window = UIWindow()
+        
+        let layout = UICollectionViewFlowLayout()
+        
         window?.windowScene = scene
-        window?.rootViewController = NavBarController(rootViewController: tabBarController)
+        window?.rootViewController =  NavBarController(rootViewController: HomeVC(collectionViewLayout: layout))  //HomeVC(collectionViewLayout: layout)
         window?.makeKeyAndVisible()
     }
 
