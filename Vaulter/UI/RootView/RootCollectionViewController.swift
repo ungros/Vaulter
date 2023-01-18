@@ -1,22 +1,20 @@
 //
-//  ViewController.swift
+//  RootCollectionViewController.swift
 //  Vaulter
 //
-//  Created by Roman on 07.01.2023.
+//  Created by Roman on 18.01.2023.
 //
 
 import UIKit
 
-class RootViewController: UIViewController {
+class RootCollectionViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
-    
 }
 
-@objc extension RootViewController {
+@objc extension RootCollectionViewController {
     func setupViews() {}
     func constraintViews() {}
     func configureAppearence() {

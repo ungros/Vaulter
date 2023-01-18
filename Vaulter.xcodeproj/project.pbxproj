@@ -20,6 +20,7 @@
 		30B4D11129717DB20024A758 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B4D11029717DB20024A758 /* SettingsVC.swift */; };
 		30B4D113297180BA0024A758 /* FoldersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B4D112297180BA0024A758 /* FoldersVC.swift */; };
 		30B4D118297315F40024A758 /* NavBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B4D117297315F40024A758 /* NavBarController.swift */; };
+		30B4D11A297833750024A758 /* RootCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B4D119297833750024A758 /* RootCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		30B4D11029717DB20024A758 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		30B4D112297180BA0024A758 /* FoldersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoldersVC.swift; sourceTree = "<group>"; };
 		30B4D117297315F40024A758 /* NavBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarController.swift; sourceTree = "<group>"; };
+		30B4D119297833750024A758 /* RootCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				30B4D0EE2969ECA00024A758 /* RootViewController.swift */,
+				30B4D119297833750024A758 /* RootCollectionViewController.swift */,
 			);
 			path = RootView;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30B4D11A297833750024A758 /* RootCollectionViewController.swift in Sources */,
 				30B4D0EF2969ECA00024A758 /* RootViewController.swift in Sources */,
 				30B4D10F29717D7C0024A758 /* HomeVC.swift in Sources */,
 				30B4D113297180BA0024A758 /* FoldersVC.swift in Sources */,
