@@ -7,17 +7,24 @@
 
 import UIKit
 
-final class HomeVC: RootCollectionViewController {
+final class HomeVC: RootViewController {
+    
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
-        let listLayoutConfig = configureAppearence()
-        collectionView.collectionViewLayout = listLayoutConfig
+        view.backgroundColor = R.Colors.background
+        
     }
-}
-
-extension HomeVC {
     
 }
 
+private extension HomeVC {
+    
+    func setupConstraints() {
+        
+        
+        
+    }
+}

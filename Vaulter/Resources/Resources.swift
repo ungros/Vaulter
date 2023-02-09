@@ -22,22 +22,34 @@ enum R {
     
     enum Strings {
         
+        
+        enum GuardVC {
+            
+            static let placeholder = "Use Password"
+        }
+        
         enum TabBar {
-           static let foldersVC = "Folders"
-           static let homeVC = "Home"
-           static let settingsVC = "Settings"
+            static let foldersVC = "Folders"
+            static let homeVC = "Home"
+            static let settingsVC = "Settings"
+            
         }
         
         
     }
     
-    struct Images {
+    enum Images {
         
         enum TabBar {
             static let foldersVC = UIImage(systemName: "folder.fill")
             static let homeVC = UIImage(systemName: "homekit")
             static let settingsVC = UIImage(systemName: "folder.fill.badge.gearshape")
+            
         }
+        
+        static let guardButton  = UIImage(systemName: "faceid")
     }
+    
+    
     
 }

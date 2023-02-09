@@ -15,13 +15,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let scene = (scene as? UIWindowScene) else { return }
         
-        let tabBarController = TabBarController()
+       let tabBarController =  GuardVC() //TabBarController()
         window = UIWindow()
-        
-        let layout = UICollectionViewFlowLayout()
-        
         window?.windowScene = scene
-        window?.rootViewController =  NavBarController(rootViewController: HomeVC(collectionViewLayout: layout))  //HomeVC(collectionViewLayout: layout)
+        window?.rootViewController = tabBarController  //NavBarController(rootViewController: tabBarController)
         window?.makeKeyAndVisible()
     }
 

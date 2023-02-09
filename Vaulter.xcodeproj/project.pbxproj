@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3002957F2994E1F700DCD984 /* FaceID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3002957E2994E1F700DCD984 /* FaceID.swift */; };
+		300295812994ECB100DCD984 /* GuardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300295802994ECB100DCD984 /* GuardVC.swift */; };
+		3002958329953DE400DCD984 /* Password.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3002958229953DE400DCD984 /* Password.swift */; };
 		30B4D0EB2969ECA00024A758 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B4D0EA2969ECA00024A758 /* AppDelegate.swift */; };
 		30B4D0ED2969ECA00024A758 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B4D0EC2969ECA00024A758 /* SceneDelegate.swift */; };
 		30B4D0EF2969ECA00024A758 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B4D0EE2969ECA00024A758 /* RootViewController.swift */; };
@@ -24,6 +27,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3002957E2994E1F700DCD984 /* FaceID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceID.swift; sourceTree = "<group>"; };
+		300295802994ECB100DCD984 /* GuardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardVC.swift; sourceTree = "<group>"; };
+		3002958229953DE400DCD984 /* Password.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Password.swift; sourceTree = "<group>"; };
 		30B4D0E72969ECA00024A758 /* Vaulter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vaulter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30B4D0EA2969ECA00024A758 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30B4D0EC2969ECA00024A758 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +59,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		300295752993F23C00DCD984 /* Guard */ = {
+			isa = PBXGroup;
+			children = (
+				300295802994ECB100DCD984 /* GuardVC.swift */,
+				3002958429953E2C00DCD984 /* Buttons */,
+			);
+			name = Guard;
+			sourceTree = "<group>";
+		};
+		3002958429953E2C00DCD984 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				3002957E2994E1F700DCD984 /* FaceID.swift */,
+				3002958229953DE400DCD984 /* Password.swift */,
+			);
+			name = Buttons;
+			sourceTree = "<group>";
+		};
 		30B4D0DE2969ECA00024A758 = {
 			isa = PBXGroup;
 			children = (
@@ -85,8 +109,8 @@
 			isa = PBXGroup;
 			children = (
 				30B4D0FB2969ECA10024A758 /* Info.plist */,
-				30B4D0EA2969ECA00024A758 /* AppDelegate.swift */,
 				30B4D0EC2969ECA00024A758 /* SceneDelegate.swift */,
+				30B4D0EA2969ECA00024A758 /* AppDelegate.swift */,
 				30B4D0F82969ECA10024A758 /* LaunchScreen.storyboard */,
 			);
 			path = App;
@@ -123,6 +147,7 @@
 		30B4D1072969EF6C0024A758 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				300295752993F23C00DCD984 /* Guard */,
 				30B4D114297180D70024A758 /* Home */,
 				30B4D115297180ED0024A758 /* Settings */,
 				30B4D116297181060024A758 /* Folders */,
@@ -245,12 +270,15 @@
 				30B4D0EF2969ECA00024A758 /* RootViewController.swift in Sources */,
 				30B4D10F29717D7C0024A758 /* HomeVC.swift in Sources */,
 				30B4D113297180BA0024A758 /* FoldersVC.swift in Sources */,
+				300295812994ECB100DCD984 /* GuardVC.swift in Sources */,
 				30B4D118297315F40024A758 /* NavBarController.swift in Sources */,
+				3002958329953DE400DCD984 /* Password.swift in Sources */,
 				30B4D10D296AFFCE0024A758 /* UIColor.swift in Sources */,
 				30B4D0EB2969ECA00024A758 /* AppDelegate.swift in Sources */,
 				30B4D0ED2969ECA00024A758 /* SceneDelegate.swift in Sources */,
 				30B4D10B296AFF9B0024A758 /* Resources.swift in Sources */,
 				30B4D1032969EE950024A758 /* TabBarController.swift in Sources */,
+				3002957F2994E1F700DCD984 /* FaceID.swift in Sources */,
 				30B4D0F52969ECA00024A758 /* Vaulter.xcdatamodeld in Sources */,
 				30B4D11129717DB20024A758 /* SettingsVC.swift in Sources */,
 			);
