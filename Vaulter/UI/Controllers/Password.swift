@@ -9,6 +9,7 @@ import UIKit
 
 final class PasswordButton: UITextField {
     
+    private let padding = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 40)
     
      init(placeholder: String) {
          super.init(frame: .zero)
@@ -21,6 +22,20 @@ final class PasswordButton: UITextField {
         fatalError("init(coder:) has not been implemented")
     }
     
+    
+    
+    override func textRect(forBounds bounds: CGRect) -> CGRect {
+        bounds.inset(by: padding)
+    }
+    override func placeholderRect(forBounds bounds: CGRect) -> CGRect {
+        bounds.inset(by: padding)
+    }
+    override func editingRect(forBounds bounds: CGRect) -> CGRect {
+        bounds.inset(by: padding)
+    }
+    
+    
+    
     private  func textFieldStyle() {
         
         textColor = R.Colors.cardColor
@@ -31,10 +46,10 @@ final class PasswordButton: UITextField {
         layer.borderColor = R.Colors.cardColor.cgColor
         
         attributedPlaceholder = NSAttributedString(string: R.Strings.GuardVC.placeholder, attributes: [
-            NSAttributedString.Key.foregroundColor: R.Colors.cardColor])
-        font = .boldSystemFont(ofSize: 18)
+            NSAttributedString.Key.foregroundColor: R.Colors.cardColor, ])
+        font = .boldSystemFont(ofSize: 17)
         
-        
+        isSecureTextEntry = true
     }
 }
 

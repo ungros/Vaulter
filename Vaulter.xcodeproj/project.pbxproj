@@ -10,6 +10,7 @@
 		3002957F2994E1F700DCD984 /* FaceID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3002957E2994E1F700DCD984 /* FaceID.swift */; };
 		300295812994ECB100DCD984 /* GuardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300295802994ECB100DCD984 /* GuardVC.swift */; };
 		3002958329953DE400DCD984 /* Password.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3002958229953DE400DCD984 /* Password.swift */; };
+		30029587299553F100DCD984 /* EyeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30029586299553F100DCD984 /* EyeButton.swift */; };
 		30B4D0EB2969ECA00024A758 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B4D0EA2969ECA00024A758 /* AppDelegate.swift */; };
 		30B4D0ED2969ECA00024A758 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B4D0EC2969ECA00024A758 /* SceneDelegate.swift */; };
 		30B4D0EF2969ECA00024A758 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B4D0EE2969ECA00024A758 /* RootViewController.swift */; };
@@ -30,6 +31,7 @@
 		3002957E2994E1F700DCD984 /* FaceID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceID.swift; sourceTree = "<group>"; };
 		300295802994ECB100DCD984 /* GuardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardVC.swift; sourceTree = "<group>"; };
 		3002958229953DE400DCD984 /* Password.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Password.swift; sourceTree = "<group>"; };
+		30029586299553F100DCD984 /* EyeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeButton.swift; sourceTree = "<group>"; };
 		30B4D0E72969ECA00024A758 /* Vaulter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vaulter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30B4D0EA2969ECA00024A758 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30B4D0EC2969ECA00024A758 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,10 +73,27 @@
 		3002958429953E2C00DCD984 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
-				3002957E2994E1F700DCD984 /* FaceID.swift */,
-				3002958229953DE400DCD984 /* Password.swift */,
+				300295882995550B00DCD984 /* FaceID */,
+				30029585299553DD00DCD984 /* Password */,
 			);
 			name = Buttons;
+			sourceTree = "<group>";
+		};
+		30029585299553DD00DCD984 /* Password */ = {
+			isa = PBXGroup;
+			children = (
+				3002958229953DE400DCD984 /* Password.swift */,
+				30029586299553F100DCD984 /* EyeButton.swift */,
+			);
+			name = Password;
+			sourceTree = "<group>";
+		};
+		300295882995550B00DCD984 /* FaceID */ = {
+			isa = PBXGroup;
+			children = (
+				3002957E2994E1F700DCD984 /* FaceID.swift */,
+			);
+			name = FaceID;
 			sourceTree = "<group>";
 		};
 		30B4D0DE2969ECA00024A758 = {
@@ -275,6 +294,7 @@
 				3002958329953DE400DCD984 /* Password.swift in Sources */,
 				30B4D10D296AFFCE0024A758 /* UIColor.swift in Sources */,
 				30B4D0EB2969ECA00024A758 /* AppDelegate.swift in Sources */,
+				30029587299553F100DCD984 /* EyeButton.swift in Sources */,
 				30B4D0ED2969ECA00024A758 /* SceneDelegate.swift in Sources */,
 				30B4D10B296AFF9B0024A758 /* Resources.swift in Sources */,
 				30B4D1032969EE950024A758 /* TabBarController.swift in Sources */,

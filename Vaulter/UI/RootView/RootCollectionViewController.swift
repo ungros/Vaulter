@@ -15,7 +15,7 @@ class RootCollectionViewController: UICollectionViewController {
         let listLayoutConfig = configureAppearence()
         collectionView.collectionViewLayout = listLayoutConfig
         
-        let cellRegistration = UICollectionView.CellRegistration{ (cell: UICollectionViewListCell, indexPath: IndexPath, itemIdentifier: String) in
+        _ = UICollectionView.CellRegistration{ (cell: UICollectionViewListCell, indexPath: IndexPath, itemIdentifier: String) in
             
         }
     }

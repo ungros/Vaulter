@@ -9,30 +9,30 @@ import UIKit
 
 final class FaceIDButton: UIButton {
     
+    let faceButton = EyeButton()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+      buttonStyle()
         
-        buttonStyle()
     }
+    
+    
     @available(*, unavailable)
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    
     func buttonStyle() {
         backgroundColor = R.Colors.cardColor
         layer.cornerRadius = 17
-        layer.borderWidth = .nan
-        layer.borderColor = .none
+        layer.borderWidth = 2
+        layer.borderColor = R.Colors.cardColor.cgColor
+
         
         setTitleColor(.white, for: .normal)
-        setTitle(" Use FaceID", for: .normal)
-        titleLabel?.font = UIFont(name: "", size: 44)
-    
-        setImage(R.Images.guardButton, for: .normal)
-        imageView?.tintColor = .white
+        setTitle("Use FaceID", for: .normal)
+       
     }
 }
 

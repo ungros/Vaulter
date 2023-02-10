@@ -18,7 +18,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
        let tabBarController =  GuardVC() //TabBarController()
         window = UIWindow()
         window?.windowScene = scene
-        window?.rootViewController = tabBarController  //NavBarController(rootViewController: tabBarController)
+        window?.rootViewController = tabBarController
         window?.makeKeyAndVisible()
     }
 
