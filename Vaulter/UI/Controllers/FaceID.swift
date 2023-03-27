@@ -6,10 +6,10 @@
 //
 
 import UIKit
+import LocalAuthentication
 
 final class FaceIDButton: UIButton {
     
-    let faceButton = EyeButton()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -32,6 +32,12 @@ final class FaceIDButton: UIButton {
         
         setTitleColor(.white, for: .normal)
         setTitle("Use FaceID", for: .normal)
+        
+        let faceIdImage = UIImage(systemName: "faceid")
+        faceIdImage?.withTintColor(.red)
+        
+        
+        setImage(faceIdImage?.withRenderingMode(.alwaysOriginal), for: .normal)
        
     }
 }
@@ -46,5 +52,28 @@ private extension FaceIDButton {
         layer.shadowOpacity = 0.5
         clipsToBounds = true
         layer.masksToBounds = true
+    }
+}
+
+private extension FaceIDButton {
+    
+    func faceIDSetup() {
+        let context = LAContext()
+        var error: NSError?
+        
+        
+        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
+            let reason = "Please authorize with Face ID"
+            
+            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason
+            ) { success, error in
+                DispatchQueue.main.async {
+                    guard success == true, error == nil else {
+                        return // made attention status
+                    }
+                }
+            }
+        }
+        
     }
 }
