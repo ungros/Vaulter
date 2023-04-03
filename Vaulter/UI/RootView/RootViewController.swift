@@ -7,19 +7,14 @@
 
 import UIKit
 
-class RootViewController: UIViewController {
+open class RootViewController: UIViewController {
     
-    override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setup()
     }
-    
 }
 
 @objc extension RootViewController {
-    func setupViews() {}
-    func constraintViews() {}
-    func configureAppearence() {
-        view.backgroundColor = R.Colors.background
-    }
+      func setup() {}
 }

@@ -25,7 +25,35 @@
 		30B4D113297180BA0024A758 /* FoldersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B4D112297180BA0024A758 /* FoldersVC.swift */; };
 		30B4D118297315F40024A758 /* NavBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B4D117297315F40024A758 /* NavBarController.swift */; };
 		30B4D11A297833750024A758 /* RootCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B4D119297833750024A758 /* RootCollectionViewController.swift */; };
+		30CA2E5729D7481E009FA2AE /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 30CA2E5629D7481E009FA2AE /* SnapKit */; };
+		30CA2E5A29D74839009FA2AE /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 30CA2E5929D74839009FA2AE /* RxCocoa */; };
+		30CA2E5C29D74839009FA2AE /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 30CA2E5B29D74839009FA2AE /* RxSwift */; };
+		30CA2EEF29DAEB1C009FA2AE /* GuardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CA2EEE29DAEB1C009FA2AE /* GuardViewModel.swift */; };
+		30CA2EF129DAF9A9009FA2AE /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CA2EF029DAF9A9009FA2AE /* RootView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		30CA2E9A29D7516E009FA2AE /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30CA2EEA29D7527E009FA2AE /* Embed ExtensionKit Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed ExtensionKit Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3002957E2994E1F700DCD984 /* FaceID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceID.swift; sourceTree = "<group>"; };
@@ -48,6 +76,8 @@
 		30B4D112297180BA0024A758 /* FoldersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoldersVC.swift; sourceTree = "<group>"; };
 		30B4D117297315F40024A758 /* NavBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarController.swift; sourceTree = "<group>"; };
 		30B4D119297833750024A758 /* RootCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCollectionViewController.swift; sourceTree = "<group>"; };
+		30CA2EEE29DAEB1C009FA2AE /* GuardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardViewModel.swift; sourceTree = "<group>"; };
+		30CA2EF029DAF9A9009FA2AE /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +85,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30CA2E5C29D74839009FA2AE /* RxSwift in Frameworks */,
+				30CA2E5A29D74839009FA2AE /* RxCocoa in Frameworks */,
+				30CA2E5729D7481E009FA2AE /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +99,7 @@
 			children = (
 				300295802994ECB100DCD984 /* GuardVC.swift */,
 				3002958429953E2C00DCD984 /* Buttons */,
+				30CA2EEE29DAEB1C009FA2AE /* GuardViewModel.swift */,
 			);
 			name = Guard;
 			sourceTree = "<group>";
@@ -158,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				30B4D0EE2969ECA00024A758 /* RootViewController.swift */,
+				30CA2EF029DAF9A9009FA2AE /* RootView.swift */,
 				30B4D119297833750024A758 /* RootCollectionViewController.swift */,
 			);
 			path = RootView;
@@ -225,12 +260,19 @@
 				30B4D0E32969ECA00024A758 /* Sources */,
 				30B4D0E42969ECA00024A758 /* Frameworks */,
 				30B4D0E52969ECA00024A758 /* Resources */,
+				30CA2E9A29D7516E009FA2AE /* Embed Foundation Extensions */,
+				30CA2EEA29D7527E009FA2AE /* Embed ExtensionKit Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Vaulter;
+			packageProductDependencies = (
+				30CA2E5629D7481E009FA2AE /* SnapKit */,
+				30CA2E5929D74839009FA2AE /* RxCocoa */,
+				30CA2E5B29D74839009FA2AE /* RxSwift */,
+			);
 			productName = Vaulter;
 			productReference = 30B4D0E72969ECA00024A758 /* Vaulter.app */;
 			productType = "com.apple.product-type.application";
@@ -242,7 +284,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1400;
+				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					30B4D0E62969ECA00024A758 = {
@@ -259,6 +301,10 @@
 				Base,
 			);
 			mainGroup = 30B4D0DE2969ECA00024A758;
+			packageReferences = (
+				30CA2E5529D7481E009FA2AE /* XCRemoteSwiftPackageReference "SnapKit" */,
+				30CA2E5829D74839009FA2AE /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 30B4D0E82969ECA00024A758 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -299,6 +345,8 @@
 				30B4D10B296AFF9B0024A758 /* Resources.swift in Sources */,
 				30B4D1032969EE950024A758 /* TabBarController.swift in Sources */,
 				3002957F2994E1F700DCD984 /* FaceID.swift in Sources */,
+				30CA2EF129DAF9A9009FA2AE /* RootView.swift in Sources */,
+				30CA2EEF29DAEB1C009FA2AE /* GuardViewModel.swift in Sources */,
 				30B4D0F52969ECA00024A758 /* Vaulter.xcdatamodeld in Sources */,
 				30B4D11129717DB20024A758 /* SettingsVC.swift in Sources */,
 			);
@@ -508,6 +556,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		30CA2E5529D7481E009FA2AE /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+		30CA2E5829D74839009FA2AE /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "http://github.com/ReactiveX/RxSwift";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		30CA2E5629D7481E009FA2AE /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 30CA2E5529D7481E009FA2AE /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		30CA2E5929D74839009FA2AE /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 30CA2E5829D74839009FA2AE /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		30CA2E5B29D74839009FA2AE /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 30CA2E5829D74839009FA2AE /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		30B4D0F32969ECA00024A758 /* Vaulter.xcdatamodeld */ = {
