@@ -153,6 +153,7 @@
 				30B4D1092969EF9E0024A758 /* Resources */,
 				30B4D1082969EF930024A758 /* Extensions */,
 				30B4D1012969ECCC0024A758 /* App */,
+				30CA2EF229EC3F7F009FA2AE /* CoreData */,
 				30B4D0F32969ECA00024A758 /* Vaulter.xcdatamodeld */,
 			);
 			path = Vaulter;
@@ -248,6 +249,13 @@
 				30B4D112297180BA0024A758 /* FoldersVC.swift */,
 			);
 			name = Folders;
+			sourceTree = "<group>";
+		};
+		30CA2EF229EC3F7F009FA2AE /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

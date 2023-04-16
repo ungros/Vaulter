@@ -9,12 +9,23 @@ import UIKit
 import SnapKit
 
 final class GuardVC: RootViewController {
-  
+    
     let faceIDButton = FaceIDButton()
-    let 
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        view.addSubview(faceIDButton)
+        
+        faceIDButton.snp.makeConstraints{
+            $0.center.equalToSuperview()
+            $0.size.equalTo(200)
+        }
+    }
     
 }
 
-private extension GuardVC {
-    
+extension GuardVC {
+  
 }
+
