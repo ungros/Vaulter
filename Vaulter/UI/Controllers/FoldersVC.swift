@@ -12,5 +12,7 @@ class FoldersVC: RootViewController {
 }
 
 extension FoldersVC {
-    
+    override func setup() {
+        <#code#>
+    }
 }

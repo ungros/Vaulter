@@ -40,9 +40,9 @@ final class PasswordButton: UITextField {
         
         textColor = R.Colors.cardColor
         //textAlignment = .center
-        layer.cornerRadius = 17
+        //layer.cornerRadius = 17
         layer.backgroundColor = .none
-        layer.borderWidth = 2
+        layer.borderWidth = 3
         layer.borderColor = R.Colors.cardColor.cgColor
         
         attributedPlaceholder = NSAttributedString(string: R.Strings.GuardVC.placeholder, attributes: [

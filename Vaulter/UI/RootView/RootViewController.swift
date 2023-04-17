@@ -15,6 +15,6 @@ open class RootViewController: UIViewController {
     }
 }
 
-@objc extension RootViewController {
-      func setup() {}
+extension RootViewController {
+     @objc func setup() {}
 }

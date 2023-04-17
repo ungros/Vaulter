@@ -12,5 +12,7 @@ class SettingsVC: RootViewController {
 }
 
 extension SettingsVC {
-    
+    override func setup() {
+        <#code#>
+    }
 }

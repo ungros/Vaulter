@@ -7,14 +7,16 @@
 
 import UIKit
 import LocalAuthentication
+import SnapKit
 
 
 final class FaceIDButton: UIButton {
     
+    let faceIdImage = UIImage(systemName: "faceid")
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-      buttonStyle()
+        buttonStyle()
         
     }
     
@@ -25,6 +27,7 @@ final class FaceIDButton: UIButton {
     }
     
     func buttonStyle() {
+       
         backgroundColor = R.Colors.cardColor
         layer.cornerRadius = 17
         layer.borderWidth = 2
@@ -34,11 +37,7 @@ final class FaceIDButton: UIButton {
         setTitleColor(.white, for: .normal)
         setTitle("Use FaceID", for: .normal)
         
-        let faceIdImage = UIImage(systemName: "faceid")
-        faceIdImage?.withTintColor(.red)
-        
-        
-        setImage(faceIdImage?.withRenderingMode(.alwaysOriginal), for: .normal)
+      
        
     }
 }
@@ -71,10 +70,18 @@ private extension FaceIDButton {
                 DispatchQueue.main.async {
                     guard success == true, error == nil else {
                         return // made attention status
+                        
                     }
                 }
             }
         }
-        
+     
     }
+    
+//    func imageSetup() {
+//        faceIdImage.snp.makeConstraints{
+//            $0.bottom.centerX.equalToSuperview()
+//            $0.bottom.centerY.equalToSuperview()
+//        }
+//    }
 }

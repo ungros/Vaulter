@@ -7,9 +7,9 @@
 
 import UIKit
 
-class RootCollectionViewController: UICollectionViewController {
+open class RootCollectionViewController: UICollectionViewController {
     
-    override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
         
         let listLayoutConfig = configureAppearence()
